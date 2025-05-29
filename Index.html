@@ -1,107 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Open InstaAss</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>Open InstaAss</title>  
+  <style>  
+    html, body {  
+      margin: 0;  
+      padding: 0;  
+      height: 100%;  
+      width: 100%;  
+      overflow: hidden;  
+      font-family: Arial, sans-serif;  
+    }  
+  
+    .container {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      height: 100%;  
+      box-sizing: border-box;  
+    }  
+  
+    .top-ad {  
+      width: 728px;  
+      height: 90px;  
+      margin-top: 10px;  
+    }  
+  
+    .main-content {  
+      flex: 1;  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      width: 100%;  
+      position: relative;  
+    }  
+  
+    .button-wrapper {  
+      z-index: 1;  
+    }  
+  
+    button {  
+      padding: 15px 30px;  
+      font-size: 18px;  
+      background-color: #007BFF;  
+      color: white;  
+      border: none;  
+      border-radius: 8px;  
+      cursor: pointer;  
+      transition: background-color 0.3s ease;  
+    }  
+  
+    button:hover {  
+      background-color: #0056b3;  
+    }  
+  
+    .right-ad {  
+      position: absolute;  
+      right: 10px;  
+      top: 50%;  
+      transform: translateY(-50%);  
+      width: 160px;  
+      height: 600px;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <div class="top-ad">  
+      <!-- Top 728x90 Ad -->  
+      <script type="text/javascript">  
+        atOptions = {  
+          'key' : '346968eed633657544e74d1626a9bacd',  
+          'format' : 'iframe',  
+          'height' : 90,  
+          'width' : 728,  
+          'params' : {}  
+        };  
+      </script>  
+      <script type="text/javascript" src="//decomposemanly.com/346968eed633657544e74d1626a9bacd/invoke.js"></script>  
+    </div>  
+  
+    <div class="main-content">  
+      <div class="button-wrapper">  
+        <button onclick="location.href='https://instaass1.netlify.app'">  
+          Open InstaAss1  
+        </button>  
+      </div>  
+  
+      <div class="right-ad">  
+        <!-- Right 160x600 Ad -->  
+        <script type="text/javascript">  
+          atOptions = {  
+            'key' : '9c631b1de4d768a199c12a6ff38afc8e',  
+            'format' : 'iframe',  
+            'height' : 600,  
+            'width' : 160,  
+            'params' : {}  
+          };  
+        </script>  
+        <script type="text/javascript" src="//decomposemanly.com/9c631b1de4d768a199c12a6ff38afc8e/invoke.js"></script>  
+      </div>  
+    </div>  
+  </div>  
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      box-sizing: border-box;
-    }
-
-    .top-ad {
-      width: 728px;
-      height: 90px;
-      margin-top: 10px;
-    }
-
-    .main-content {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      position: relative;
-    }
-
-    .button-wrapper {
-      z-index: 1;
-    }
-
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    .right-ad {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 160px;
-      height: 600px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="top-ad">
-      <!-- Top 728x90 Ad -->
-      <script type="text/javascript">
-        atOptions = {
-          'key' : '346968eed633657544e74d1626a9bacd',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-        };
-      </script>
-      <script type="text/javascript" src="//decomposemanly.com/346968eed633657544e74d1626a9bacd/invoke.js"></script>
-    </div>
-
-    <div class="main-content">
-      <div class="button-wrapper">
-        <button onclick="window.open('https://instaass1.netlify.app', '_blank')">
-          Open InstaAss1
-        </button>
-      </div>
-
-      <div class="right-ad">
-        <!-- Right 160x600 Ad -->
-        <script type="text/javascript">
-          atOptions = {
-            'key' : '9c631b1de4d768a199c12a6ff38afc8e',
-            'format' : 'iframe',
-            'height' : 600,
-            'width' : 160,
-            'params' : {}
-          };
-        </script>
-        <script type="text/javascript" src="//decomposemanly.com/9c631b1de4d768a199c12a6ff38afc8e/invoke.js"></script>
-      </div>
-    </div>
-  </div>
-</body>
+  <!-- Redirect after 15 seconds -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://instaass1.netlify.app";
+    }, 15000); // 15 seconds
+  </script>
+</body>  
 </html>
